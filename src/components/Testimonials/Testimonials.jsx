@@ -14,37 +14,37 @@ const data = [
   {
     id: 1,
     avatar: AVTR1,
-    name: "Tina Snow",
+    name: "Devendra Yadav (CEO)",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Aman is an exceptional frontend engineer with a keen eye for detail. His ability to build seamless user interfaces enhances the overall user experience. He is always proactive in solving challenges and delivering high-quality work. His contributions at Oextech have been invaluable.",
   },
   {
     id: 2,
     avatar: AVTR2,
-    name: "Aman Kumar",
+    name: "Shubham Mishra (TL)",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Aman is a dedicated frontend engineer who brings creativity and efficiency to every project. His ability to collaborate and align with the team’s goals ensures smooth execution of tasks. His commitment to delivering high-quality user experiences makes him a key contributor to the team.",
   },
   {
     id: 3,
     avatar: AVTR3,
-    name: "Shubham Mishra",
+    name: "Shubham Jauhari (SE)",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Working with Aman has been a great experience. He is quick to grasp complex problems and transform them into intuitive designs. His expertise in modern frontend technologies reflects in the quality of his work. He is a reliable and innovative team member.",
   },
   {
     id: 4,
     avatar: AVTR4,
-    name: "Shubham Jauhari",
+    name: "Nikhil Mishra (SE)",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Aman’s dedication to frontend development is inspiring. His structured approach and technical skills ensure smooth and responsive applications. He values teamwork and is always willing to help others. His contributions significantly enhance project outcomes.",
   },
 ];
 
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>Review From Clients</h5>
+      <h5>Review From Colleagues</h5>
       <h2>Testimonials</h2>
 
       <Swiper

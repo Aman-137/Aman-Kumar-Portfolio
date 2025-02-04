@@ -22,24 +22,27 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>1+ Years Working</small>
             </article>
             <article className="about__card">
               <FaUser className="about__icon" />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>5+ Worldwide</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>8+ Completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            I'm a Frontend Engineer with 1+ years of work experience and 2 years
+            of relevant experience in React, Next.js, TypeScript, and Tailwind
+            CSS. I specialize in UI/UX, accessibility, and performance
+            optimization, delivering 8+ projects for 5+ clients worldwide. My
+            work includes websites, e-commerce platforms, admin dashboards, and
+            payment integrations. Passionate about building seamless and
+            high-performance web experiences. 🚀
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

@@ -16,23 +16,19 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Wireframing & Prototyping</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>User Research</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>UI Design</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>UX Optimization</p>
             </li>
           </ul>
         </article>
@@ -44,27 +40,27 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Web Application Development</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Responsive Design</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Performance Optimization</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Cross-Browser Compatibility</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Feature Development</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Code Optimization & Refactoring</p>
             </li>
           </ul>
         </article>
@@ -76,23 +72,19 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Bug Fixes & Enhancements</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Feature Development</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Documentation</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Community Collaboration</p>
             </li>
           </ul>
         </article>

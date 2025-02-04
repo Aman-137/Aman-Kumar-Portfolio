@@ -1,54 +1,56 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
+import IMG1 from "../../assets/The Store.png";
 import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG3 from "../../assets/Mytube.png";
+import IMG4 from "../../assets/cryptoverse.png";
+import IMG5 from "../../assets/zerocross.png";
+import IMG6 from "../../assets/calci.png";
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Crypto Currency Dashboard & Financial Visualization",
-    gitgub: "https://github.com",
-    demo: "https://google.com",
+    title: "Your Ultimate Ecommerce Destination - The Store",
+    github: "https://github.com/Aman-137/The-Store",
+    demo: "https://the-store-sepia.vercel.app/",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Charts templates & infographics in Figma",
-    gitgub: "https://github.com",
-    demo: "https://google.com",
+    title: "Collaborative Sketching Board - DrawBoard",
+    github: "https://github.com/Aman-137/",
+    demo: "https://github.com/Aman-137/",
   },
   {
     id: 3,
     image: IMG3,
-    title: "Figma Dashboard UI kit for data design web apps",
-    gitgub: "https://github.com",
-    demo: "https://google.com",
+    title: "Watch, Share, Discover Videos - MyTube(clone)",
+    github: "https://github.com/Aman-137/Youtube-Clone",
+    demo: "https://clonemytube.netlify.app/",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Maintaining tasks and tracking progress",
-    gitgub: "https://github.com",
-    demo: "https://google.com",
+    title: "Real time Crypto Data & Insights - Cryptoverse",
+    github: "https://github.com/Aman-137/Cryptoverse-app",
+    demo: "https://cryptoversee-app.netlify.app/",
   },
   {
     id: 5,
     image: IMG5,
-    title: "Charts templates & infographics in figma",
-    gitgub: "https://github.com",
-    demo: "https://google.com",
+    title: "Classic Strategy, Endless Fun - Tic Tac Toe",
+    github:
+      "https://github.com/Aman-137/React.js/tree/master/React%20Projects/Tic%20Tac%20Toe",
+    demo: "https://cross-zero.netlify.app/",
   },
   {
     id: 6,
     image: IMG6,
-    title: "Crypto Currency Dashboard & Financial Visualization",
-    gitgub: "https://github.com",
-    demo: "https://google.com",
+    title: "Simplify Your Calculations - CalcMaster",
+    github:
+      "https://github.com/Aman-137/React.js/tree/master/React%20Projects/Calculator%20App",
+    demo: "https://my-react-calci.netlify.app/",
   },
 ];
 
@@ -67,7 +69,7 @@ const Portfolio = () => {
               </div>
               <h3>{item.title}</h3>
               <div className="portfolio__item-cta">
-                <a href={item.gitgub} className="btn" target="_blank">
+                <a href={item.github} className="btn" target="_blank">
                   Github
                 </a>
                 <a href={item.demo} className="btn btn-primary" target="_blank">

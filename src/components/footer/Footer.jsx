@@ -51,7 +51,7 @@ const Footer = () => {
           <FaGithub />
         </a>
         <a
-          href="https://discord.com/channels/@me"
+          href="https://discord.com/users/1114841725765156954"
           target="_blank"
           aria-label="Discord"
         >
