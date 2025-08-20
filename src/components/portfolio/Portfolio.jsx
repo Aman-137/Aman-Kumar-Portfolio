@@ -19,8 +19,8 @@ const data = [
     id: 2,
     image: IMG2,
     title: "Collaborative Sketching Board - DrawBoard",
-    github: "https://github.com/Aman-137/",
-    demo: "https://github.com/Aman-137/",
+    github: "https://github.com/Aman-137/Drawboard",
+    demo: "https://drawboard-lime.vercel.app/",
   },
   {
     id: 3,

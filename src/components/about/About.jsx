@@ -36,10 +36,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            I'm a Frontend Engineer with 1+ years of work experience and 2 years
-            of relevant experience in React, Next.js, TypeScript, and Tailwind
-            CSS. I specialize in UI/UX, accessibility, and performance
-            optimization, delivering 8+ projects for 5+ clients worldwide. My
+            I'm a Frontend Engineer with 1.5+ years of work experience and 2
+            years of relevant experience in React, Next.js, TypeScript, and
+            Tailwind CSS. I specialize in UI/UX, accessibility, and performance
+            optimization, delivering 10+ projects for 8+ clients worldwide. My
             work includes websites, e-commerce platforms, admin dashboards, and
             payment integrations. Passionate about building seamless and
             high-performance web experiences. 🚀
