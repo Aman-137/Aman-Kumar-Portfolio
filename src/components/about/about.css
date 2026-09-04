@@ -5,20 +5,29 @@
 }
 
 .about__me {
+  position: relative;
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--color-primary),
-    transparent
-  );
   display: grid;
   place-items: center;
 }
 
+/* Blurred copy of the same photo, sitting behind the sharp one.
+   Oversized by 30px so the blur samples real pixels at the edges,
+   then clipped back to the rounded card. */
+.about__me-bg {
+  position: absolute;
+  inset: -30px;
+  background-position: center;
+  background-size: cover;
+  filter: blur(24px) brightness(0.7) saturate(1.15);
+  clip-path: inset(30px round 2rem);
+}
+
 .about__me-image {
+  position: relative;
+  z-index: 1;
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(10deg);
@@ -65,9 +74,22 @@
   color: var(--color-light);
 }
 
-.about__content p {
+.about__bio {
   margin: 2rem 0 2.6rem;
+}
+
+.about__bio p {
   color: var(--color-light);
+  font-size: 0.95rem;
+}
+
+.about__bio p + p {
+  margin-top: 1.1rem;
+}
+
+.about__highlight {
+  color: var(--color-primary);
+  font-weight: 500;
 }
 
 /* ===================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
@@ -82,7 +104,7 @@
     margin: 2rem auto 4rem;
   }
 
-  .about__content p {
+  .about__bio {
     margin: 1rem 0 1.5rem;
   }
 }
@@ -103,7 +125,8 @@
     text-align: center;
   }
 
-  .about__content p {
+  .about__bio {
     margin: 1.5rem 0;
+    text-align: left;
   }
 }

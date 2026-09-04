@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/Aman-2.png";
 import { FaAward, FaUser } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 
@@ -12,8 +12,13 @@ const About = () => {
 
       <div className="container about__container">
         <div className="about__me">
+          <div
+            className="about__me-bg"
+            style={{ backgroundImage: `url(${ME})` }}
+            aria-hidden="true"
+          />
           <div className="about__me-image">
-            <img src={ME} alt="me" />
+            <img src={ME} alt="Aman Kumar" />
           </div>
         </div>
 
@@ -22,28 +27,46 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1.6+ Years Working</small>
+              <small>2.5+ Years Working</small>
             </article>
             <article className="about__card">
               <FaUser className="about__icon" />
               <h5>Clients</h5>
-              <small>5+ Worldwide</small>
+              <small>8+ Worldwide</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>8+ Completed</small>
+              <small>10+ Completed</small>
             </article>
           </div>
-          <p>
-            I'm a Frontend Engineer with 1.5+ years of work experience and 2
-            years of relevant experience in React, Next.js, TypeScript, and
-            Tailwind CSS. I specialize in UI/UX, accessibility, and performance
-            optimization, delivering 10+ projects for 8+ clients worldwide. My
-            work includes websites, e-commerce platforms, admin dashboards, and
-            payment integrations. Passionate about building seamless and
-            high-performance web experiences. 🚀
-          </p>
+          <div className="about__bio">
+            <p>
+              I'm a Software Engineer with 2.5+ years building fast, scalable,
+              user-focused web applications — from production interfaces and
+              design systems to the REST APIs, secure authentication, and AI
+              agents behind them.
+            </p>
+            <p>
+              Then I built and launched my own SaaS.{" "}
+              <span className="about__highlight">Inertia Leads</span> took me
+              from idea → architecture → deployment → launch: an AI-powered B2B
+              lead generation platform handling lead discovery, enrichment,
+              scoring, personalized outreach, inbox rotation, and campaign
+              automation. Going 0→1 pushed me well past the frontend — into
+              databases, background jobs, infrastructure, AI workflows, and the
+              question every builder eventually faces: will someone actually pay
+              for this?
+            </p>
+            <p>
+              It changed how I engineer. I still obsess over the details —
+              wasted re-renders, performance budgets, maintainable code — but
+              now I also ask how the system scales, what breaks when it fails,
+              and whether a feature solves a real problem. That's the engineer
+              I'm becoming: deep technically, fluent in the product around the
+              code, and able to own the whole arc from idea to launch. 🚀
+            </p>
+          </div>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>

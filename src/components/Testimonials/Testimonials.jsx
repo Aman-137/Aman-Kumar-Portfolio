@@ -1,9 +1,5 @@
 import React from "react";
 import "./testimonials.css";
-import AVTR1 from "../../assets/avatar1.jpg";
-import AVTR2 from "../../assets/avatar2.jpg";
-import AVTR3 from "../../assets/avatar3.jpg";
-import AVTR4 from "../../assets/avatar4.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -13,33 +9,54 @@ import "swiper/css/pagination";
 const data = [
   {
     id: 1,
-    avatar: AVTR1,
-    name: "Devendra Yadav (CEO)",
+    name: "Devendra Yadav",
+    role: "CEO, OexTech Solutions",
     review:
-      "Aman is an exceptional frontend engineer with a keen eye for detail. His ability to build seamless user interfaces enhances the overall user experience. He is always proactive in solving challenges and delivering high-quality work. His contributions at Oextech have been invaluable.",
+      "Aman consistently took ownership well beyond what was asked of him. He understood the business goal behind each project and made decisions accordingly — whether that meant rethinking an approach or pushing back on a spec that wouldn't serve the client. That kind of judgement is rare this early in a career, and it's why we trusted him with our most demanding client work.",
   },
   {
     id: 2,
-    avatar: AVTR2,
-    name: "Shubham Mishra (TL)",
+    name: "Shubham Mishra",
+    role: "Team Lead",
     review:
-      "Aman is a dedicated frontend engineer who brings creativity and efficiency to every project. His ability to collaborate and align with the team’s goals ensures smooth execution of tasks. His commitment to delivering high-quality user experiences makes him a key contributor to the team.",
+      "Aman became one of the people the team naturally gravitated towards. He mentored juniors without being asked, unblocked others before they had to escalate, and kept discussions focused on solutions rather than blame. He raised the standard of how the whole team worked, not just his own output.",
   },
   {
     id: 3,
-    avatar: AVTR3,
-    name: "Shubham Jauhari (SE)",
+    name: "Ajjay Mittal",
+    role: "Senior AI/ML Engineer",
     review:
-      "Working with Aman has been a great experience. He is quick to grasp complex problems and transform them into intuitive designs. His expertise in modern frontend technologies reflects in the quality of his work. He is a reliable and innovative team member.",
+      "Collaborating with Aman on our AI features was genuinely easy. He picked up model behaviour, streaming responses, and tool-calling quickly, and asked the right questions about latency, token cost, and failure handling instead of treating the model as a black box. He bridged the gap between our ML work and a product users could actually use.",
   },
   {
     id: 4,
-    avatar: AVTR4,
-    name: "Nikhil Mishra (SE)",
+    name: "Shubham Jauhari",
+    role: "Software Engineer",
     review:
-      "Aman’s dedication to frontend development is inspiring. His structured approach and technical skills ensure smooth and responsive applications. He values teamwork and is always willing to help others. His contributions significantly enhance project outcomes.",
+      "Aman is equally comfortable on both sides of the stack. He would build the interface, then go and write the API it needed and tune the query behind it. When something broke in production he traced it end to end instead of stopping at the boundary of his own code. That made him one of the most useful people on the team to pair with.",
+  },
+  {
+    id: 5,
+    name: "Lakshay Khanna",
+    role: "QA Lead",
+    review:
+      "From a QA perspective, Aman is a pleasure to work with. His builds arrive with the edge cases already considered, he documents reproduction steps as carefully as he writes code, and he never treats a bug report as criticism. Regression counts on the modules he owned were consistently the lowest on the team.",
+  },
+  {
+    id: 6,
+    name: "Nikhil Mishra",
+    role: "Software Engineer",
+    review:
+      "Aman cares about the details most people skip — unnecessary re-renders, bundle size, the loading state nobody thinks about until it's missing. He is also the first to jump in when someone else is stuck close to a deadline. A reliable engineer, and genuinely good to have on a team.",
   },
 ];
+
+const getInitials = (name) =>
+  name
+    .split(" ")
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("");
 
 const Testimonials = () => {
   return (
@@ -60,13 +77,14 @@ const Testimonials = () => {
         loop={true}
         pagination={{ clickable: true }}
       >
-        {data.map((item, index) => {
+        {data.map((item) => {
           return (
             <SwiperSlide key={item.id} className="testimonial">
-              <div className="client__avatar">
-                <img src={item.avatar} alt={item.name} />
+              <div className="client__avatar" aria-hidden="true">
+                {getInitials(item.name)}
               </div>
               <h5 className="client__name">{item.name}</h5>
+              <small className="client__role">{item.role}</small>
               <small className="client__review">{item.review}</small>
             </SwiperSlide>
           );

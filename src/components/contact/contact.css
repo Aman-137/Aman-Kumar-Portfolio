@@ -56,6 +56,33 @@ textarea {
   color: var(--color-white);
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-light);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+}
+
+form button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form__status {
+  text-align: center;
+}
+
+.form__status--success {
+  color: var(--color-primary);
+}
+
+.form__status--error {
+  color: #ff8080;
+}
+
 /* ===================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 @media screen and (max-width: 1024px) {
   .contact__container {

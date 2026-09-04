@@ -29,8 +29,14 @@
   display: none;
 }
 
+/* The reset above clears outlines, so keyboard focus needs its ring back. */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
 body {
-  font-family: "Poppins", serif;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;

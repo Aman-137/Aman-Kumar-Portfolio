@@ -7,19 +7,22 @@ import { FaDiscord } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className="footer__logo">
+      <a href="#home" className="footer__logo">
         AMAN KUMAR
       </a>
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#work">Experience</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
         </li>
         <li>
           <a href="#services">Services</a>
@@ -37,8 +40,9 @@ const Footer = () => {
 
       <div className="footer__socials">
         <a
-          href="https://linkedin.com/aman137"
+          href="https://www.linkedin.com/in/aman137/"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
           <BsLinkedin />
@@ -46,6 +50,7 @@ const Footer = () => {
         <a
           href="https://github.com/Aman-137"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="GitHub"
         >
           <FaGithub />
@@ -53,6 +58,7 @@ const Footer = () => {
         <a
           href="https://discord.com/users/1114841725765156954"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="Discord"
         >
           <FaDiscord />

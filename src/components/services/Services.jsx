@@ -2,6 +2,43 @@ import React from "react";
 import "./services.css";
 import { BiCheck } from "react-icons/bi";
 
+const services = [
+  {
+    id: 1,
+    title: "Frontend Development",
+    items: [
+      "Responsive Web Applications",
+      "Design Systems & Reusable Components",
+      "State Management & Data Fetching",
+      "Performance Optimization",
+      "Accessibility & Cross-Browser Support",
+    ],
+  },
+  {
+    id: 2,
+    title: "Backend & API Development",
+    items: [
+      "REST & GraphQL API Design",
+      "Authentication & Session Security",
+      "PostgreSQL Schema & Query Tuning",
+      "Payment Gateway Integration",
+      "Automation & Reporting Pipelines",
+      "CI/CD & Deployment",
+    ],
+  },
+  {
+    id: 3,
+    title: "AI Integration",
+    items: [
+      "LLM API Integration",
+      "Streaming Responses & Tool Calling",
+      "Multi-Agent Query Interfaces",
+      "Speech Recognition & Voice Input",
+      "AI-Powered Reporting & Insights",
+    ],
+  },
+];
+
 const Services = () => {
   return (
     <section id="services">
@@ -9,85 +46,21 @@ const Services = () => {
       <h2>Services</h2>
 
       <div className="container services__container">
-        <article className="service">
-          <div className="service__head">
-            <h3>UI/UX Design</h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Wireframing & Prototyping</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>User Research</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>UI Design</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>UX Optimization</p>
-            </li>
-          </ul>
-        </article>
-
-        <article className="service">
-          <div className="service__head">
-            <h3>Web Development</h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Web Application Development</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Responsive Design</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Performance Optimization</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Cross-Browser Compatibility</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Feature Development</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Code Optimization & Refactoring</p>
-            </li>
-          </ul>
-        </article>
-
-        <article className="service">
-          <div className="service__head">
-            <h3>Open-Source Contribution</h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Bug Fixes & Enhancements</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Feature Development</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Documentation</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Community Collaboration</p>
-            </li>
-          </ul>
-        </article>
+        {services.map((service) => (
+          <article key={service.id} className="service">
+            <div className="service__head">
+              <h3>{service.title}</h3>
+            </div>
+            <ul className="service__list">
+              {service.items.map((item) => (
+                <li key={item}>
+                  <BiCheck className="service__list-icon" />
+                  <p>{item}</p>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
     </section>
   );

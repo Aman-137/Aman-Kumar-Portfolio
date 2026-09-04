@@ -10,6 +10,8 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio__item:hover {
@@ -20,15 +22,45 @@
 .portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.portfolio__item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Wide landing-page shots crop from the right, keeping logo and headline */
+.portfolio__item-image--wide img {
+  object-position: left center;
 }
 
 .portfolio__item h3 {
-  margin: 1.2rem 0 2rem;
+  margin: 1.2rem 0 1rem;
+  font-size: 1.05rem;
+}
+
+.portfolio__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio__tag {
+  font-size: 0.72rem;
+  color: var(--color-primary);
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--color-primary-variant);
+  border-radius: 2rem;
 }
 
 .portfolio__item-cta {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin-top: auto;
   margin-bottom: 1rem;
 }
 

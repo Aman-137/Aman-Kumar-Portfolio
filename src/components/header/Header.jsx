@@ -1,21 +1,21 @@
 import React from "react";
 import "./header.css";
 import CTA from "./CTA";
-import ME from "../../assets/me.png";
+import ME from "../../assets/Aman-1.png";
 import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Aman Kumar</h1>
-        <h5 className="text-light">Frontend Engineer</h5>
+        <h5 className="text-light">Full Stack AI Engineer</h5>
         <CTA />
         <HeaderSocials />
 
         <div className="me">
-          <img src={ME} alt="me" />
+          <img src={ME} alt="Aman Kumar" />
         </div>
 
         <a href="#contact" className="scroll__down">
